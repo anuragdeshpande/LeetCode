@@ -16,7 +16,7 @@ public class IntToRoman {
 
 
     // Solution 1
-    private String intToRoman1(int num) {
+    public String intToRoman1(int num) {
         StringBuilder roman = new StringBuilder();
         while(num > 0){
             if(num >= 1000){
@@ -90,10 +90,8 @@ public class IntToRoman {
                 continue;
             }
 
-            if(num >= 1){
-                roman.append("I");
-                num = num - 1;
-            }
+            roman.append("I");
+            num = num - 1;
 
         }
 
