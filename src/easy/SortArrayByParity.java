@@ -43,7 +43,7 @@ public class SortArrayByParity {
                 indexEven ++;
             } else {
                 sortedArray[indexOdd] = num;
-                indexOdd ++;
+                indexOdd --;
             }
         }
 
